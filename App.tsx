@@ -59,9 +59,14 @@ export default function ProShiftApp() {
   const updateCocktail = (updatedCocktail: Cocktail) => {
     setAppData(prev => ({
         ...prev,
-        cocktails: prev.cocktails.map(c => 
-            c.id === updatedCocktail.id ? updatedCocktail : c
-        )
+        // Upsert + de-dupe by id to prevent "cross-pollination" from duplicates
+        // (e.g., old imports leaving multiple entries with the same cocktail id).
+        cocktails: (() => {
+          const byId = new Map<string, Cocktail>();
+          for (const c of prev.cocktails) byId.set(c.id, c);
+          byId.set(updatedCocktail.id, updatedCocktail);
+          return Array.from(byId.values());
+        })()
     }));
   };
 
