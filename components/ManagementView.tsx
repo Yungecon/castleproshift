@@ -182,6 +182,21 @@ export const ManagementView: React.FC<ManagementViewProps> = ({ hidden, data, on
 
   const handleNamesApproved = () => setWizardStep('review_specs');
 
+  const slugifyId = (str: string) =>
+    (str || '')
+      .toLowerCase()
+      .replace(/[^a-z0-9]/g, '_')
+      .replace(/_+/g, '_')
+      .replace(/^_+|_+$/g, '');
+
+  const makeUniqueCocktailId = (name: string, usedIds: Set<string>) => {
+    const base = `c_${slugifyId(name) || 'imported'}`;
+    if (!usedIds.has(base)) return base;
+    let n = 2;
+    while (usedIds.has(`${base}_${n}`)) n += 1;
+    return `${base}_${n}`;
+  };
+
   const createMatchObject = (ingName: string, roleGuess: string): ProductMatch => {
     const potential = (Object.values(data.products) as Product[]).find(p => 
         p.name.toLowerCase().includes(ingName.toLowerCase()) || 
@@ -214,9 +229,11 @@ export const ManagementView: React.FC<ManagementViewProps> = ({ hidden, data, on
 
   const createEntities = () => {
     const createdCocktailIds: string[] = [];
+    const usedCocktailIds = new Set<string>(data.cocktails.map(c => c.id));
     extractedCocktails.forEach(c => {
         const pIds: string[] = [];
         const matches = productMatches[c.id];
+        if (!matches) return;
 
         const processMatch = (m: ProductMatch): string | null => {
             if (m.matchedProductId === 'skip') return null;
@@ -275,7 +292,11 @@ export const ManagementView: React.FC<ManagementViewProps> = ({ hidden, data, on
             if (res) pIds.push(res);
         });
 
-        const cocktailId = `c_${c.name.toLowerCase().replace(/[^a-z0-9]/g, '_')}`;
+        const cocktailId = makeUniqueCocktailId(c.name, usedCocktailIds);
+        if (usedCocktailIds.has(`c_${slugifyId(c.name) || 'imported'}`) && cocktailId !== `c_${slugifyId(c.name) || 'imported'}`) {
+          console.warn(`[Import] Cocktail id collision for "${c.name}". Using "${cocktailId}" to avoid overwriting an existing cocktail.`);
+        }
+        usedCocktailIds.add(cocktailId);
         createdCocktailIds.push(cocktailId);
         onUpdateCocktail({
             id: cocktailId,
