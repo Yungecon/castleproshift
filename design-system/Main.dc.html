@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+  <style>
+    body { margin: 0; background: #ffffff; font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 400; font-size: 14.5px; line-height: 1.62; letter-spacing: .005em; color: #000000; -webkit-font-smoothing: antialiased; }
+    a { color: #9a5239; text-decoration: none; border-bottom: 1px solid rgba(154,82,57,.35); }
+    a:hover { color: #b7674f; border-bottom-color: #b7674f; }
+    p { margin: 0 0 16px; color: rgba(0,0,0,.78); }
+    p:last-child { margin-bottom: 0; }
+  </style>
+</helmet>
+
+<div style="width: 816px; min-height: 1056px; padding: 72px; display: flex; flex-direction: column; background: #ffffff;">
+
+  <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 24px;">
+    <span style="font-size: 11px; text-transform: uppercase; letter-spacing: .42em; font-weight: 700; color: #b7674f; line-height: 1;">Castle</span>
+    <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: .14em; font-weight: 700; color: rgba(0,0,0,.45); line-height: 1;">List register</span>
+  </div>
+
+  <h1 style="font-size: 54px; font-weight: 400; text-transform: uppercase; letter-spacing: .015em; line-height: 1.02; margin: 28px 0 0;">Editorial<br>Mono</h1>
+
+  <div style="display: flex; align-items: center; gap: 24px; margin: 24px 0 0;">
+    <span style="font-size: 11.5px; text-transform: uppercase; letter-spacing: .30em; white-space: nowrap; line-height: 1;">Design system &middot; v1</span>
+    <span style="flex: 1 1 auto; height: 1px; background: #b7674f;"></span>
+  </div>
+
+  <div style="margin-top: 40px; max-width: 560px;">
+    <p>One typeface, one accent, two registers. Everything below was read back out of documents that already exist and already agree with each other &mdash; a 44-page list and a memo set &mdash; rather than invented to sit above them.</p>
+    <p style="margin-bottom: 0;">Where the two disagreed, the disagreement was kept and scoped by document type instead of averaged away. That is the whole premise: <span style="font-style: italic; color: #9a5239;">a system with two correct answers, and a rule for which one applies.</span></p>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 24px; margin: 48px 0 16px;">
+    <span style="font-size: 11.5px; text-transform: uppercase; letter-spacing: .30em; white-space: nowrap; line-height: 1;">The split</span>
+    <span style="flex: 1 1 auto; height: 1px; background: #b7674f;"></span>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px;">
+    <div>
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; line-height: 1;">Memo register</span>
+      <p style="font-size: 12.5px; line-height: 1.55; margin: 10px 0 0;">Display carries the weight. 700 headings, 400 body, a 46&times;3 clay bar under the heading. For anything argued in prose.</p>
+    </div>
+    <div>
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; line-height: 1;">List register</span>
+      <p style="font-size: 12.5px; line-height: 1.55; margin: 10px 0 0;">Weight inverts. 400 titles at scale, 700 only at line level on the producer, a clay hairline that measures the column. For anything enumerated.</p>
+    </div>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 24px; margin: 48px 0 16px;">
+    <span style="font-size: 11.5px; text-transform: uppercase; letter-spacing: .30em; white-space: nowrap; line-height: 1;">Contents</span>
+    <span style="flex: 1 1 auto; height: 1px; background: #b7674f;"></span>
+  </div>
+
+  <div style="display: grid; gap: 0;">
+    <div style="display: flex; align-items: baseline; gap: 16px; padding: 7px 0; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px;">
+      <span style="flex: 0 0 96px; font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em;">Foundations</span>
+      <span style="flex: 1 1 auto; color: rgba(0,0,0,.78);">Registers &middot; Color &middot; Type &middot; Space</span>
+      <span style="flex: 0 0 auto; font-variant-numeric: tabular-nums; color: rgba(0,0,0,.45);">02&ndash;05</span>
+    </div>
+    <div style="display: flex; align-items: baseline; gap: 16px; padding: 7px 0; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px;">
+      <span style="flex: 0 0 96px; font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em;">Components</span>
+      <span style="flex: 1 1 auto; color: rgba(0,0,0,.78);">Entry &middot; Heads &amp; rules &middot; Editorial blocks &middot; Laws</span>
+      <span style="flex: 0 0 auto; font-variant-numeric: tabular-nums; color: rgba(0,0,0,.45);">06&ndash;09</span>
+    </div>
+    <div style="display: flex; align-items: baseline; gap: 16px; padding: 7px 0; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px;">
+      <span style="flex: 0 0 96px; font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em;">Specimen</span>
+      <span style="flex: 1 1 auto; color: rgba(0,0,0,.78);">A list sheet &middot; A memo sheet</span>
+      <span style="flex: 0 0 auto; font-variant-numeric: tabular-nums; color: rgba(0,0,0,.45);">10&ndash;11</span>
+    </div>
+  </div>
+
+  <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: auto; padding-top: 48px;">
+    <span style="flex: 1 1 auto; height: 1px; background: rgba(0,0,0,.14);"></span>
+    <span style="font-size: 11px; color: rgba(0,0,0,.45); font-variant-numeric: tabular-nums;">01</span>
+    <span style="flex: 1 1 auto; height: 1px; background: rgba(0,0,0,.14);"></span>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

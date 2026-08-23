@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+  <style>
+    body { margin: 0; background: #ffffff; font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 400; font-size: 14.5px; line-height: 1.62; letter-spacing: .005em; color: #000000; -webkit-font-smoothing: antialiased; }
+    a { color: #9a5239; text-decoration: none; border-bottom: 1px solid rgba(154,82,57,.35); }
+    a:hover { color: #b7674f; border-bottom-color: #b7674f; }
+    p { margin: 0 0 16px; color: rgba(0,0,0,.78); }
+    p:last-child { margin-bottom: 0; }
+  </style>
+</helmet>
+
+<div style="width: 816px; padding: 72px; display: flex; flex-direction: column; background: #ffffff;">
+
+  <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 24px;">
+    <span style="font-size: 11px; text-transform: uppercase; letter-spacing: .30em; color: #b7674f; line-height: 1;">Components</span>
+    <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: .14em; font-weight: 700; color: rgba(0,0,0,.45); line-height: 1;">06</span>
+  </div>
+  <h1 style="font-size: 34px; font-weight: 400; text-transform: uppercase; letter-spacing: .015em; line-height: 1.05; margin: 12px 0 0;">The entry</h1>
+
+  <p style="margin-top: 24px; max-width: 600px;">One line, three ranks, no rule. It carries every item on 44 pages and it never changes shape &mdash; only which of its optional slots are present. Read left to right the line falls from most to least load-bearing, and it does that with weight, slope and value instead of size.</p>
+
+  <div style="display: flex; align-items: center; gap: 24px; margin: 40px 0 20px;">
+    <span style="font-size: 11.5px; text-transform: uppercase; letter-spacing: .30em; white-space: nowrap; line-height: 1;">Anatomy</span>
+    <span style="flex: 1 1 auto; height: 1px; background: #b7674f;"></span>
+  </div>
+
+  <div style="border-top: 1px solid #000000; border-bottom: 1px solid rgba(0,0,0,.14); padding: 20px 0;">
+    <sc-if value="{{ isPour }}" hint-placeholder-val="{{ true }}">
+      <div style="display: flex; align-items: baseline; gap: 16px; padding: 3px 0;">
+        <div style="flex: 1 1 auto; min-width: 0; font-size: 13.5px;"><span style="font-weight: 700;">Chardonnay</span> <span style="font-style: italic;">Domaine Eden</span> <span style="color: rgba(0,0,0,.45);">Santa Cruz Mountains, California 2021</span></div>
+        <div style="flex: 0 0 auto; display: flex; align-items: baseline; gap: 9px; justify-content: flex-end; min-width: 86px; font-variant-numeric: tabular-nums; font-size: 13.5px;"><span style="min-width: 26px; text-align: right;">22</span><span style="color: #b7674f;">|</span><span style="min-width: 26px; text-align: right;">100</span></div>
+      </div>
+    </sc-if>
+    <sc-if value="{{ isMarker }}" hint-placeholder-val="{{ true }}">
+      <div style="display: flex; align-items: baseline; gap: 16px; padding: 3px 0;">
+        <span style="flex: 0 0 14px; font-weight: 700; color: #b7674f; font-size: 11px;">G</span>
+        <div style="flex: 1 1 auto; min-width: 0; font-size: 13.5px;"><span style="font-weight: 700;">Larmandier-Bernier</span> <span style="font-style: italic;">Vieille Vigne du Levant Grand Cru 2011</span></div>
+        <div style="flex: 0 0 auto; font-variant-numeric: tabular-nums; text-align: right; min-width: 46px; font-size: 13.5px;">275</div>
+      </div>
+    </sc-if>
+    <sc-if value="{{ isPlain }}" hint-placeholder-val="{{ true }}">
+      <div style="display: flex; align-items: baseline; gap: 16px; padding: 3px 0;">
+        <div style="flex: 1 1 auto; min-width: 0; font-size: 13.5px;"><span style="font-weight: 700;">Vincent Joudart</span> <span style="font-style: italic;">Blanc de Blancs 2022</span></div>
+        <div style="flex: 0 0 auto; font-variant-numeric: tabular-nums; text-align: right; min-width: 46px; font-size: 13.5px;">170</div>
+      </div>
+    </sc-if>
+  </div>
+
+  <p style="margin-top: 14px; font-size: 12.5px; line-height: 1.55; max-width: 600px;">{{ variantNote }}</p>
+
+  <div style="display: flex; align-items: center; gap: 24px; margin: 40px 0 16px;">
+    <span style="font-size: 11.5px; text-transform: uppercase; letter-spacing: .30em; white-space: nowrap; line-height: 1;">Slots</span>
+    <span style="flex: 1 1 auto; height: 1px; background: #b7674f;"></span>
+  </div>
+
+  <div style="display: grid; grid-template-columns: 108px 92px 1fr; gap: 0;">
+    <div style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; padding: 10px 16px 10px 0; border-bottom: 1px solid #000000;">Slot</div>
+    <div style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; padding: 10px 16px 10px 0; border-bottom: 1px solid #000000;">Box</div>
+    <div style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; padding: 10px 0; border-bottom: 1px solid #000000;">Setting</div>
+
+    <div style="font-size: 12.5px; padding: 11px 16px 11px 0; border-bottom: 1px solid rgba(0,0,0,.14);"><span style="font-weight: 700; color: #b7674f;">Marker</span></div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; color: rgba(0,0,0,.45); padding: 11px 16px 11px 0; border-bottom: 1px solid rgba(0,0,0,.14);">0 0 14px</div>
+    <div style="font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78); padding: 11px 0; border-bottom: 1px solid rgba(0,0,0,.14);">11px / 700 / clay. Optional. A fixed gutter, so unmarked lines in the same section stay aligned with marked ones.</div>
+
+    <div style="font-size: 12.5px; padding: 11px 16px 11px 0; border-bottom: 1px solid rgba(0,0,0,.14);"><span style="font-weight: 700;">Producer</span></div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; color: rgba(0,0,0,.45); padding: 11px 16px 11px 0; border-bottom: 1px solid rgba(0,0,0,.14);">1 1 auto</div>
+    <div style="font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78); padding: 11px 0; border-bottom: 1px solid rgba(0,0,0,.14);">13.5px / 700 / ink. Rank one. Required &mdash; the only thing in the line a reader is assumed to be searching for.</div>
+
+    <div style="font-size: 12.5px; padding: 11px 16px 11px 0; border-bottom: 1px solid rgba(0,0,0,.14);"><span style="font-style: italic;">Cuv&eacute;e</span></div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; color: rgba(0,0,0,.45); padding: 11px 16px 11px 0; border-bottom: 1px solid rgba(0,0,0,.14);">inline</div>
+    <div style="font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78); padding: 11px 0; border-bottom: 1px solid rgba(0,0,0,.14);">13.5px / 400 italic / ink. Rank two. Black italic, because here the slope is structure, not tone of voice.</div>
+
+    <div style="font-size: 12.5px; padding: 11px 16px 11px 0; border-bottom: 1px solid rgba(0,0,0,.14);"><span style="color: rgba(0,0,0,.45);">Origin</span></div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; color: rgba(0,0,0,.45); padding: 11px 16px 11px 0; border-bottom: 1px solid rgba(0,0,0,.14);">inline</div>
+    <div style="font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78); padding: 11px 0; border-bottom: 1px solid rgba(0,0,0,.14);">13.5px / 400 / mute. Rank three. Region, country, vintage, in that order, no commas after the last.</div>
+
+    <div style="font-size: 12.5px; padding: 11px 16px 11px 0; border-bottom: 1px solid rgba(0,0,0,.14);">Value</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; color: rgba(0,0,0,.45); padding: 11px 16px 11px 0; border-bottom: 1px solid rgba(0,0,0,.14);">0 0 auto</div>
+    <div style="font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78); padding: 11px 0; border-bottom: 1px solid rgba(0,0,0,.14);">13.5px / 400 / ink, tabular figures, right aligned. Single price sets a 46 minimum; a glass-and-bottle pair sets 86 with 26 per figure either side of a clay pipe.</div>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 24px; margin: 48px 0 16px;">
+    <span style="font-size: 11.5px; text-transform: uppercase; letter-spacing: .30em; white-space: nowrap; line-height: 1;">Rules of the line</span>
+    <span style="flex: 1 1 auto; height: 1px; background: #b7674f;"></span>
+  </div>
+
+  <div style="display: grid; gap: 0;">
+    <div style="display: grid; grid-template-columns: 96px 1fr; gap: 16px; align-items: start; padding: 12px 0; border-top: 1px solid #000000; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78);">
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: #000000; padding-top: 3px;">Baseline</span>
+      <span>Every slot aligns on the baseline, not the box. Sizes may differ across slots without the line stepping.</span>
+    </div>
+    <div style="display: grid; grid-template-columns: 96px 1fr; gap: 16px; align-items: start; padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78);">
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: #000000; padding-top: 3px;">No leaders</span>
+      <span>No dotted or dashed run between the name and the price, on any of 44 pages. The right-aligned tabular column does the work and the eye crosses the white space unaided.</span>
+    </div>
+    <div style="display: grid; grid-template-columns: 96px 1fr; gap: 16px; align-items: start; padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78);">
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: #000000; padding-top: 3px;">No dividers</span>
+      <span>Nothing between entries but the 6px channel. Rules belong to section heads only.</span>
+    </div>
+    <div style="display: grid; grid-template-columns: 96px 1fr; gap: 16px; align-items: start; padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78);">
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: #000000; padding-top: 3px;">Wrapping</span>
+      <span>The body may wrap to a second line; the value never leaves the first. That is what the min-width on the body box is protecting.</span>
+    </div>
+    <div style="display: grid; grid-template-columns: 96px 1fr; gap: 16px; align-items: start; padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78);">
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: #000000; padding-top: 3px;">Currency</span>
+      <span>No symbol, anywhere. The column is understood, and a repeated glyph would compete with the clay pipe.</span>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+<script data-dc-script data-props='{"variant":{"editor":"enum","options":["pour","marker","plain"],"default":"pour","section":"Anatomy","tsType":"string"}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const v = this.props.variant ?? 'pour';
+    const notes = {
+      pour: 'Glass and bottle pair. Two tabular figures either side of a clay pipe, the whole group right aligned in an 86px box.',
+      marker: 'Bottle with a gutter marker. The marker is the one place clay carries a glyph rather than a rule, and the origin slot is dropped because the section head already stated the region.',
+      plain: 'Bottle, no marker, no origin. The shortest form the line takes: producer, cuvee, one figure.'
+    };
+    return {
+      isPour: v === 'pour',
+      isMarker: v === 'marker',
+      isPlain: v === 'plain',
+      variantNote: notes[v] ?? notes.pour
+    };
+  }
+}
+</script>
+</body>
+</html>

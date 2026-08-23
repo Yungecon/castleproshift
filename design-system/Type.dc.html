@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+  <style>
+    body { margin: 0; background: #ffffff; font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 400; font-size: 14.5px; line-height: 1.62; letter-spacing: .005em; color: #000000; -webkit-font-smoothing: antialiased; }
+    a { color: #9a5239; text-decoration: none; border-bottom: 1px solid rgba(154,82,57,.35); }
+    a:hover { color: #b7674f; border-bottom-color: #b7674f; }
+    p { margin: 0 0 16px; color: rgba(0,0,0,.78); }
+    p:last-child { margin-bottom: 0; }
+  </style>
+</helmet>
+
+<div style="width: 816px; padding: 72px; display: flex; flex-direction: column; background: #ffffff;">
+
+  <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 24px;">
+    <span style="font-size: 11px; text-transform: uppercase; letter-spacing: .30em; color: #b7674f; line-height: 1;">Foundations</span>
+    <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: .14em; font-weight: 700; color: rgba(0,0,0,.45); line-height: 1;">04</span>
+  </div>
+  <h1 style="font-size: 34px; font-weight: 400; text-transform: uppercase; letter-spacing: .015em; line-height: 1.05; margin: 12px 0 0;">Type</h1>
+
+  <p style="margin-top: 24px; max-width: 600px;">Montserrat throughout, in two weights and two slopes. The system gets its range from tracking, case and value rather than from a second family, which is why a 44-page list and a memo set can look like one house without sharing a single size.</p>
+
+  <div style="display: flex; align-items: center; gap: 24px; margin: 40px 0 20px;">
+    <span style="font-size: 11.5px; text-transform: uppercase; letter-spacing: .30em; white-space: nowrap; line-height: 1;">Four cuts, no more</span>
+    <span style="flex: 1 1 auto; height: 1px; background: #b7674f;"></span>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 48px;">
+    <div style="display: flex; flex-direction: column; gap: 6px;">
+      <span style="font-size: 26px; font-weight: 400; line-height: 1.2;">Regular 400</span>
+      <span style="font-size: 12.5px; line-height: 1.5; color: rgba(0,0,0,.78);">Body, list titles at scale, the cuv&eacute;e slot, everything unmarked.</span>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 6px;">
+      <span style="font-size: 26px; font-weight: 700; line-height: 1.2;">Bold 700</span>
+      <span style="font-size: 12.5px; line-height: 1.5; color: rgba(0,0,0,.78);">Memo headings, every utility label, the producer inside an entry.</span>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 6px;">
+      <span style="font-size: 26px; font-weight: 400; font-style: italic; line-height: 1.2;">Regular italic</span>
+      <span style="font-size: 12.5px; line-height: 1.5; color: rgba(0,0,0,.78);">A structural slot in black; a voice in clay deep. Never both on one page.</span>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 6px;">
+      <span style="font-size: 26px; font-weight: 700; font-style: italic; line-height: 1.2;">Bold italic</span>
+      <span style="font-size: 12.5px; line-height: 1.5; color: rgba(0,0,0,.78);">Loaded but unused. No page has yet needed it; treat a first use as a decision.</span>
+    </div>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 24px; margin: 48px 0 20px;">
+    <span style="font-size: 11.5px; text-transform: uppercase; letter-spacing: .30em; white-space: nowrap; line-height: 1;">The tracking ladder</span>
+    <span style="flex: 1 1 auto; height: 1px; background: #b7674f;"></span>
+  </div>
+
+  <p style="max-width: 600px; font-size: 12.5px; line-height: 1.55;">Tracking, not size, is what tells the reader how far up the page hierarchy a line of small caps sits. Four rungs are in service. Each one is claimed by exactly one role, so a new small-caps element joins an existing rung rather than inventing a value between two.</p>
+
+  <div style="display: grid; gap: 14px; margin-top: 20px;">
+    <div style="display: flex; align-items: baseline; gap: 24px;">
+      <span style="flex: 0 0 64px; font-size: 10px; letter-spacing: .14em; color: rgba(0,0,0,.45); font-variant-numeric: tabular-nums;">.42em</span>
+      <span style="flex: 0 0 200px; font-size: 11px; text-transform: uppercase; letter-spacing: .42em; font-weight: 700; color: #b7674f; line-height: 1;">Masthead</span>
+      <span style="flex: 1 1 auto; font-size: 12.5px; color: rgba(0,0,0,.78); line-height: 1.4;">Cover only. One instance per document.</span>
+    </div>
+    <div style="display: flex; align-items: baseline; gap: 24px;">
+      <span style="flex: 0 0 64px; font-size: 10px; letter-spacing: .14em; color: rgba(0,0,0,.45); font-variant-numeric: tabular-nums;">.30em</span>
+      <span style="flex: 0 0 200px; font-size: 11.5px; text-transform: uppercase; letter-spacing: .30em; line-height: 1;">List head</span>
+      <span style="flex: 1 1 auto; font-size: 12.5px; color: rgba(0,0,0,.78); line-height: 1.4;">Section labels and the list-register page eyebrow. Regular, not bold.</span>
+    </div>
+    <div style="display: flex; align-items: baseline; gap: 24px;">
+      <span style="flex: 0 0 64px; font-size: 10px; letter-spacing: .14em; color: rgba(0,0,0,.45); font-variant-numeric: tabular-nums;">.18em</span>
+      <span style="flex: 0 0 200px; font-size: 11px; text-transform: uppercase; letter-spacing: .18em; font-weight: 700; color: #b7674f; line-height: 1;">Memo eyebrow</span>
+      <span style="flex: 1 1 auto; font-size: 12.5px; color: rgba(0,0,0,.78); line-height: 1.4;">Sits above a memo heading. Tighter and bolder than its list twin.</span>
+    </div>
+    <div style="display: flex; align-items: baseline; gap: 24px;">
+      <span style="flex: 0 0 64px; font-size: 10px; letter-spacing: .14em; color: rgba(0,0,0,.45); font-variant-numeric: tabular-nums;">.14em</span>
+      <span style="flex: 0 0 200px; font-size: 10.5px; text-transform: uppercase; letter-spacing: .14em; font-weight: 700; line-height: 1;">Utility label</span>
+      <span style="flex: 1 1 auto; font-size: 12.5px; color: rgba(0,0,0,.78); line-height: 1.4;">Black, never clay. Sub-labels and the tag column of a definition list.</span>
+    </div>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 24px; margin: 48px 0 16px;">
+    <span style="font-size: 11.5px; text-transform: uppercase; letter-spacing: .30em; white-space: nowrap; line-height: 1;">The scale</span>
+    <span style="flex: 1 1 auto; height: 1px; background: #b7674f;"></span>
+  </div>
+
+  <div style="display: grid; grid-template-columns: 1.5fr 52px 44px 56px 46px 1.3fr; gap: 0;">
+    <div style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; padding: 10px 12px 10px 0; border-bottom: 1px solid #000000;">Role</div>
+    <div style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; padding: 10px 12px 10px 0; border-bottom: 1px solid #000000;">Size</div>
+    <div style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; padding: 10px 12px 10px 0; border-bottom: 1px solid #000000;">Wt</div>
+    <div style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; padding: 10px 12px 10px 0; border-bottom: 1px solid #000000;">Track</div>
+    <div style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; padding: 10px 12px 10px 0; border-bottom: 1px solid #000000;">Lead</div>
+    <div style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; padding: 10px 0; border-bottom: 1px solid #000000;">Colour</div>
+
+    <div style="font-size: 12px; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">Cover title <span style="color: rgba(0,0,0,.45);">caps</span></div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">54</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">400</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">.015</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">1.02</div>
+    <div style="font-size: 12px; padding: 9px 0; border-bottom: 1px solid rgba(0,0,0,.14); color: rgba(0,0,0,.78);">Ink</div>
+
+    <div style="font-size: 12px; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">Page title <span style="color: rgba(0,0,0,.45);">list, caps</span></div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">34</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">400</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">.015</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">1.05</div>
+    <div style="font-size: 12px; padding: 9px 0; border-bottom: 1px solid rgba(0,0,0,.14); color: rgba(0,0,0,.78);">Ink</div>
+
+    <div style="font-size: 12px; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">Heading <span style="color: rgba(0,0,0,.45);">memo</span></div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">34</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">700</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">&minus;.02</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">1.12</div>
+    <div style="font-size: 12px; padding: 9px 0; border-bottom: 1px solid rgba(0,0,0,.14); color: rgba(0,0,0,.78);">Ink</div>
+
+    <div style="font-size: 12px; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">Body</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">14.5</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">400</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">.005</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">1.62</div>
+    <div style="font-size: 12px; padding: 9px 0; border-bottom: 1px solid rgba(0,0,0,.14); color: rgba(0,0,0,.78);">Ink soft</div>
+
+    <div style="font-size: 12px; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">Entry line</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">13.5</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">mix</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">.005</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">1.62</div>
+    <div style="font-size: 12px; padding: 9px 0; border-bottom: 1px solid rgba(0,0,0,.14); color: rgba(0,0,0,.78);">Three ranks</div>
+
+    <div style="font-size: 12px; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">Annotation</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">12.5</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">400</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">.005</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">1.55</div>
+    <div style="font-size: 12px; padding: 9px 0; border-bottom: 1px solid rgba(0,0,0,.14); color: rgba(0,0,0,.78);">Ink soft</div>
+
+    <div style="font-size: 12px; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">Eyebrow &middot; folio</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">11</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">400/700</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">ladder</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">1</div>
+    <div style="font-size: 12px; padding: 9px 0; border-bottom: 1px solid rgba(0,0,0,.14); color: rgba(0,0,0,.78);">Clay / mute</div>
+
+    <div style="font-size: 12px; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">Utility label</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">10.5</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">700</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">.14</div>
+    <div style="font-size: 12px; font-variant-numeric: tabular-nums; padding: 9px 12px 9px 0; border-bottom: 1px solid rgba(0,0,0,.14);">1</div>
+    <div style="font-size: 12px; padding: 9px 0; border-bottom: 1px solid rgba(0,0,0,.14); color: rgba(0,0,0,.78);">Ink</div>
+  </div>
+
+  <p style="margin-top: 20px; font-size: 12.5px; line-height: 1.55; max-width: 600px;">Two of these are additions rather than readings: the 54px cover title and the 26px sub-heading used on these boards. Both hold the register they belong to. <span style="font-style: italic; color: #9a5239;">Treat them as proposed until a real cover ships.</span></p>
+
+</div>
+</x-dc>
+</body>
+</html>

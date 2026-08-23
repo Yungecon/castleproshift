@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+  <style>
+    body { margin: 0; background: #ffffff; font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 400; font-size: 14.5px; line-height: 1.62; letter-spacing: .005em; color: #000000; -webkit-font-smoothing: antialiased; }
+    a { color: #9a5239; text-decoration: none; border-bottom: 1px solid rgba(154,82,57,.35); }
+    a:hover { color: #b7674f; border-bottom-color: #b7674f; }
+    p { margin: 0 0 16px; color: rgba(0,0,0,.78); }
+    p:last-child { margin-bottom: 0; }
+  </style>
+</helmet>
+
+<div style="width: 816px; padding: 72px; display: flex; flex-direction: column; background: #ffffff;">
+
+  <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 24px;">
+    <span style="font-size: 11px; text-transform: uppercase; letter-spacing: .30em; color: #b7674f; line-height: 1;">Foundations</span>
+    <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: .14em; font-weight: 700; color: rgba(0,0,0,.45); line-height: 1;">03</span>
+  </div>
+  <h1 style="font-size: 34px; font-weight: 400; text-transform: uppercase; letter-spacing: .015em; line-height: 1.05; margin: 12px 0 0;">Color</h1>
+
+  <p style="margin-top: 24px; max-width: 600px;">Three families and nothing else: one clay, a black held at four values, and the paper. Every grey in the system is black at an opacity, so nothing carries a warm or cool cast that fights the clay.</p>
+
+  <div style="display: flex; align-items: center; gap: 24px; margin: 40px 0 20px;">
+    <span style="font-size: 11.5px; text-transform: uppercase; letter-spacing: .30em; white-space: nowrap; line-height: 1;">Clay</span>
+    <span style="flex: 1 1 auto; height: 1px; background: #b7674f;"></span>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;">
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <div style="height: 76px; background: #b7674f;"></div>
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; line-height: 1;">Clay</span>
+      <span style="font-size: 12.5px; font-variant-numeric: tabular-nums; line-height: 1.4;">#b7674f<br><span style="color: rgba(0,0,0,.45);">oklch(59.9% .109 37.5)</span></span>
+      <span style="font-size: 12.5px; line-height: 1.5; color: rgba(0,0,0,.78);">Rules, eyebrows, the pipe between prices, gutter markers.</span>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <div style="height: 76px; background: #9a5239;"></div>
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; line-height: 1;">Clay deep</span>
+      <span style="font-size: 12.5px; font-variant-numeric: tabular-nums; line-height: 1.4;">#9a5239<br><span style="color: rgba(0,0,0,.45);">oklch(52.0% .103 39.7)</span></span>
+      <span style="font-size: 12.5px; line-height: 1.5; color: rgba(0,0,0,.78);">Text only. The editorial aside and link colour, where clay would sit too light on paper.</span>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <div style="height: 76px; background: #f3e7e0; border: 1px solid rgba(0,0,0,.14);"></div>
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; line-height: 1;">Clay tint</span>
+      <span style="font-size: 12.5px; font-variant-numeric: tabular-nums; line-height: 1.4;">#f3e7e0<br><span style="color: rgba(0,0,0,.45);">oklch(93.6% .016 52.6)</span></span>
+      <span style="font-size: 12.5px; line-height: 1.5; color: rgba(0,0,0,.78);">Held in reserve. No shipped page fills with it yet &mdash; see the open question below.</span>
+    </div>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 24px; margin: 40px 0 20px;">
+    <span style="font-size: 11.5px; text-transform: uppercase; letter-spacing: .30em; white-space: nowrap; line-height: 1;">Ink, paper, rule</span>
+    <span style="flex: 1 1 auto; height: 1px; background: #b7674f;"></span>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;">
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <div style="height: 76px; background: #000000;"></div>
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; line-height: 1;">Ink</span>
+      <span style="font-size: 12.5px; font-variant-numeric: tabular-nums; line-height: 1.4;">#000000<br><span style="color: rgba(0,0,0,.45);">100%</span></span>
+      <span style="font-size: 12.5px; line-height: 1.5; color: rgba(0,0,0,.78);">Titles, producers, labels, the hard rule above a definition list.</span>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <div style="height: 76px; background: rgba(0,0,0,.78);"></div>
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; line-height: 1;">Ink soft</span>
+      <span style="font-size: 12.5px; font-variant-numeric: tabular-nums; line-height: 1.4;">rgba(0,0,0,.78)<br><span style="color: rgba(0,0,0,.45);">78%</span></span>
+      <span style="font-size: 12.5px; line-height: 1.5; color: rgba(0,0,0,.78);">Running prose. Every paragraph in the system sets here, never at full black.</span>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <div style="height: 76px; background: rgba(0,0,0,.45);"></div>
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; line-height: 1;">Mute</span>
+      <span style="font-size: 12.5px; font-variant-numeric: tabular-nums; line-height: 1.4;">rgba(0,0,0,.45)<br><span style="color: rgba(0,0,0,.45);">45%</span></span>
+      <span style="font-size: 12.5px; line-height: 1.5; color: rgba(0,0,0,.78);">Third rank of the entry line &mdash; origin and vintage &mdash; and the folio.</span>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <div style="height: 76px; background: #ffffff; border: 1px solid rgba(0,0,0,.14);"></div>
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; line-height: 1;">Paper</span>
+      <span style="font-size: 12.5px; font-variant-numeric: tabular-nums; line-height: 1.4;">#ffffff<br><span style="color: rgba(0,0,0,.45);">chroma 0</span></span>
+      <span style="font-size: 12.5px; line-height: 1.5; color: rgba(0,0,0,.78);">The sheet. Pure, so the clay is the only warmth on the page.</span>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <div style="height: 76px; background: #ffffff; border: 1px solid rgba(0,0,0,.14); display: flex; align-items: center; justify-content: center;"><span style="width: 100%; height: 1px; background: rgba(0,0,0,.14);"></span></div>
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; line-height: 1;">Line</span>
+      <span style="font-size: 12.5px; font-variant-numeric: tabular-nums; line-height: 1.4;">rgba(0,0,0,.14)<br><span style="color: rgba(0,0,0,.45);">14%</span></span>
+      <span style="font-size: 12.5px; line-height: 1.5; color: rgba(0,0,0,.78);">Dividers inside a definition list, and the two folio hairlines.</span>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+      <div style="height: 76px; background: #ffffff; border: 1px solid rgba(0,0,0,.14); display: flex; align-items: center; justify-content: center;"><span style="width: 100%; height: 1px; background: #000000;"></span></div>
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; line-height: 1;">Line hard</span>
+      <span style="font-size: 12.5px; font-variant-numeric: tabular-nums; line-height: 1.4;">#000000<br><span style="color: rgba(0,0,0,.45);">1px</span></span>
+      <span style="font-size: 12.5px; line-height: 1.5; color: rgba(0,0,0,.78);">Opens a definition list. One per block, at the top edge only.</span>
+    </div>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 24px; margin: 48px 0 16px;">
+    <span style="font-size: 11.5px; text-transform: uppercase; letter-spacing: .30em; white-space: nowrap; line-height: 1;">How clay behaves</span>
+    <span style="flex: 1 1 auto; height: 1px; background: #b7674f;"></span>
+  </div>
+
+  <div style="display: grid; gap: 0;">
+    <div style="display: grid; grid-template-columns: 96px 1fr; gap: 16px; align-items: start; padding: 12px 0; border-top: 1px solid #000000; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78);">
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: #000000; padding-top: 3px;">Rule</span>
+      <span>Clay draws lines and sets small caps. It is not a fill, a highlight, a button or a background band.</span>
+    </div>
+    <div style="display: grid; grid-template-columns: 96px 1fr; gap: 16px; align-items: start; padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78);">
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: #000000; padding-top: 3px;">Budget</span>
+      <span>Per page: the eyebrow, the section hairlines, the price pipe, the gutter markers, and at most one clay italic aside. Past that it stops reading as an accent.</span>
+    </div>
+    <div style="display: grid; grid-template-columns: 96px 1fr; gap: 16px; align-items: start; padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78);">
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: #000000; padding-top: 3px;">Extending</span>
+      <span>Both clays hold chroma near .105 at hue 38 and differ only in lightness. A new step moves L and nothing else &mdash; that is what keeps the ramp from drifting orange.</span>
+    </div>
+    <div style="display: grid; grid-template-columns: 96px 1fr; gap: 16px; align-items: start; padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78);">
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: #000000; padding-top: 3px;">Grayscale</span>
+      <span>Clay at 59.9% lightness and mute black at 45% converge when the page is photocopied. Never let clay be the only thing separating two ranks of information.</span>
+    </div>
+    <div style="display: grid; grid-template-columns: 96px 1fr; gap: 16px; align-items: start; padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78);">
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: #000000; padding-top: 3px;">Banned</span>
+      <span>No gradients, anywhere, including the footer rule the memo set used to carry. No second accent hue. No warm greys.</span>
+    </div>
+    <div style="display: grid; grid-template-columns: 96px 1fr; gap: 16px; align-items: start; padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78);">
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: #000000; padding-top: 3px;">Open</span>
+      <span>Clay tint is defined but unused. It stays a declared token with no permitted use until a page needs one &mdash; deleting it loses the value, using it casually breaks the fill ban.</span>
+    </div>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 24px; margin: 48px 0 16px;">
+    <span style="font-size: 11.5px; text-transform: uppercase; letter-spacing: .30em; white-space: nowrap; line-height: 1;">Tokens</span>
+    <span style="flex: 1 1 auto; height: 1px; background: #b7674f;"></span>
+  </div>
+
+  <pre style="margin: 0; padding: 20px 24px; border: 1px solid rgba(0,0,0,.14); font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11.5px; line-height: 1.7; color: rgba(0,0,0,.78); white-space: pre-wrap; overflow-x: auto;">--clay:      #b7674f;   --ink:       #000;
+--clay-deep: #9a5239;   --ink-soft:  rgba(0,0,0,.78);
+--clay-tint: #f3e7e0;   --mute:      rgba(0,0,0,.45);
+                        --paper:     #fff;
+                        --line:      rgba(0,0,0,.14);
+                        --line-hard: #000;</pre>
+
+</div>
+</x-dc>
+</body>
+</html>

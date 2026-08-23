@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+  <style>
+    body { margin: 0; background: #ffffff; font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 400; font-size: 14.5px; line-height: 1.62; letter-spacing: .005em; color: #000000; -webkit-font-smoothing: antialiased; }
+    a { color: #9a5239; text-decoration: none; border-bottom: 1px solid rgba(154,82,57,.35); }
+    a:hover { color: #b7674f; border-bottom-color: #b7674f; }
+    p { margin: 0 0 16px; color: rgba(0,0,0,.78); }
+    p:last-child { margin-bottom: 0; }
+  </style>
+</helmet>
+
+<div style="width: 816px; padding: 72px; display: flex; flex-direction: column; background: #ffffff;">
+
+  <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 24px;">
+    <span style="font-size: 11px; text-transform: uppercase; letter-spacing: .30em; color: #b7674f; line-height: 1;">Foundations</span>
+    <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: .14em; font-weight: 700; color: rgba(0,0,0,.45); line-height: 1;">05</span>
+  </div>
+  <h1 style="font-size: 34px; font-weight: 400; text-transform: uppercase; letter-spacing: .015em; line-height: 1.05; margin: 12px 0 0;">Space</h1>
+
+  <p style="margin-top: 24px; max-width: 600px;">The sheet is Letter authored at 96 pixels to the inch, so a pixel here is a real measurement and 12pt body type is 16px. Everything is separated by space; almost nothing is separated by a line.</p>
+
+  <div style="display: flex; align-items: center; gap: 24px; margin: 40px 0 24px;">
+    <span style="font-size: 11.5px; text-transform: uppercase; letter-spacing: .30em; white-space: nowrap; line-height: 1;">The sheet</span>
+    <span style="flex: 1 1 auto; height: 1px; background: #b7674f;"></span>
+  </div>
+
+  <div style="display: flex; align-items: flex-start; gap: 48px;">
+    <div style="flex: 0 0 204px; height: 264px; border: 1px solid #000000; padding: 18px; position: relative;">
+      <div style="width: 100%; height: 100%; border: 1px solid rgba(0,0,0,.14); display: flex; align-items: center; justify-content: center;">
+        <span style="font-size: 9.5px; text-transform: uppercase; letter-spacing: .14em; color: rgba(0,0,0,.45); text-align: center; line-height: 1.6;">672<br>measure</span>
+      </div>
+    </div>
+    <div style="flex: 1 1 auto; display: grid; gap: 0;">
+      <div style="display: grid; grid-template-columns: 130px 1fr; gap: 16px; align-items: start; padding: 11px 0; border-top: 1px solid #000000; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78);">
+        <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: #000000; padding-top: 3px;">Sheet</span>
+        <span>816 &times; 1056. Letter at 96ppi. A4 is 794 &times; 1123, A5 559 &times; 794, Tabloid 1056 &times; 1632.</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 130px 1fr; gap: 16px; align-items: start; padding: 11px 0; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78);">
+        <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: #000000; padding-top: 3px;">Margin</span>
+        <span>72 on all four sides. Not a grid unit &mdash; a physical three-quarter inch, and the reason the page reads as a printed sheet.</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 130px 1fr; gap: 16px; align-items: start; padding: 11px 0; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78);">
+        <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: #000000; padding-top: 3px;">Measure</span>
+        <span>672 for lists, which use the full column. Prose caps at 600 regardless, or the 14.5px body runs past a comfortable line.</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 130px 1fr; gap: 16px; align-items: start; padding: 11px 0; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78);">
+        <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: #000000; padding-top: 3px;">Two column</span>
+        <span>Equal halves with a 48 gutter. Never three on a Letter sheet at this margin.</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 130px 1fr; gap: 16px; align-items: start; padding: 11px 0; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78);">
+        <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: #000000; padding-top: 3px;">Foot</span>
+        <span>The folio is pushed down by auto margin, never positioned. Short pages keep their foot at the bottom edge.</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 24px; margin: 48px 0 20px;">
+    <span style="font-size: 11.5px; text-transform: uppercase; letter-spacing: .30em; white-space: nowrap; line-height: 1;">The step scale</span>
+    <span style="flex: 1 1 auto; height: 1px; background: #b7674f;"></span>
+  </div>
+
+  <div style="display: grid; gap: 10px;">
+    <div style="display: flex; align-items: center; gap: 20px;"><span style="flex: 0 0 40px; font-size: 11px; font-variant-numeric: tabular-nums; color: rgba(0,0,0,.45);">8</span><span style="flex: 0 0 8px; height: 12px; background: #b7674f;"></span><span style="flex: 1 1 auto; font-size: 12.5px; color: rgba(0,0,0,.78);">Inside a price pair, either side of the clay pipe (9).</span></div>
+    <div style="display: flex; align-items: center; gap: 20px;"><span style="flex: 0 0 40px; font-size: 11px; font-variant-numeric: tabular-nums; color: rgba(0,0,0,.45);">12</span><span style="flex: 0 0 12px; height: 12px; background: #b7674f;"></span><span style="flex: 1 1 auto; font-size: 12.5px; color: rgba(0,0,0,.78);">Eyebrow to title. Definition-row padding, top and bottom.</span></div>
+    <div style="display: flex; align-items: center; gap: 20px;"><span style="flex: 0 0 40px; font-size: 11px; font-variant-numeric: tabular-nums; color: rgba(0,0,0,.45);">16</span><span style="flex: 0 0 16px; height: 12px; background: #b7674f;"></span><span style="flex: 1 1 auto; font-size: 12.5px; color: rgba(0,0,0,.78);">Paragraph spacing. Entry body to price. Tag column to its definition.</span></div>
+    <div style="display: flex; align-items: center; gap: 20px;"><span style="flex: 0 0 40px; font-size: 11px; font-variant-numeric: tabular-nums; color: rgba(0,0,0,.45);">24</span><span style="flex: 0 0 24px; height: 12px; background: #b7674f;"></span><span style="flex: 1 1 auto; font-size: 12.5px; color: rgba(0,0,0,.78);">Section label to its hairline. Accent rule to the paragraph under it.</span></div>
+    <div style="display: flex; align-items: center; gap: 20px;"><span style="flex: 0 0 40px; font-size: 11px; font-variant-numeric: tabular-nums; color: rgba(0,0,0,.45);">32</span><span style="flex: 0 0 32px; height: 12px; background: #b7674f;"></span><span style="flex: 1 1 auto; font-size: 12.5px; color: rgba(0,0,0,.78);">Between stacked editorial blocks inside one column.</span></div>
+    <div style="display: flex; align-items: center; gap: 20px;"><span style="flex: 0 0 40px; font-size: 11px; font-variant-numeric: tabular-nums; color: rgba(0,0,0,.45);">48</span><span style="flex: 0 0 48px; height: 12px; background: #b7674f;"></span><span style="flex: 1 1 auto; font-size: 12.5px; color: rgba(0,0,0,.78);">Above a section head. Column gutter. Content to the folio rule.</span></div>
+    <div style="display: flex; align-items: center; gap: 20px;"><span style="flex: 0 0 40px; font-size: 11px; font-variant-numeric: tabular-nums; color: rgba(0,0,0,.45);">64</span><span style="flex: 0 0 64px; height: 12px; background: #b7674f;"></span><span style="flex: 1 1 auto; font-size: 12.5px; color: rgba(0,0,0,.78);">Reserved. Available for a full-sheet break; unused so far.</span></div>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 24px; margin: 48px 0 16px;">
+    <span style="font-size: 11.5px; text-transform: uppercase; letter-spacing: .30em; white-space: nowrap; line-height: 1;">Rhythm and reflow</span>
+    <span style="flex: 1 1 auto; height: 1px; background: #b7674f;"></span>
+  </div>
+
+  <div style="display: grid; gap: 0;">
+    <div style="display: grid; grid-template-columns: 130px 1fr; gap: 16px; align-items: start; padding: 12px 0; border-top: 1px solid #000000; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78);">
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: #000000; padding-top: 3px;">Asymmetric</span>
+      <span>A section head takes 48 above and 16 below. The head belongs to what follows it, and the space says so.</span>
+    </div>
+    <div style="display: grid; grid-template-columns: 130px 1fr; gap: 16px; align-items: start; padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78);">
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: #000000; padding-top: 3px;">Tight lists</span>
+      <span>Entries take 3 above and below &mdash; a 6px channel. It is deliberately below the step scale: entries are one block, not seven objects.</span>
+    </div>
+    <div style="display: grid; grid-template-columns: 130px 1fr; gap: 16px; align-items: start; padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78);">
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: #000000; padding-top: 3px;">Gap, not margin</span>
+      <span>Groups of siblings are laid out with flex or grid and a gap. Per-element margins and whitespace between inline elements do not survive editing.</span>
+    </div>
+    <div style="display: grid; grid-template-columns: 130px 1fr; gap: 16px; align-items: start; padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78);">
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: #000000; padding-top: 3px;">Below 900</span>
+      <span>The sheet gives up its fixed width and its margin drops to 40 / 24. Two columns become one at a 24 gap. Type sizes do not change.</span>
+    </div>
+    <div style="display: grid; grid-template-columns: 130px 1fr; gap: 16px; align-items: start; padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78);">
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: #000000; padding-top: 3px;">On screen</span>
+      <span>Sheets sit on black at 6% with a 40 gap between them, so a stack of pages reads as paper rather than as a scrolling document.</span>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

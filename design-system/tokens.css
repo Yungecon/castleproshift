@@ -1,0 +1,54 @@
+/* Castle Editorial Mono — design tokens
+   Letter sheet authored at 96ppi: 816 x 1056, 72 margin, 672 measure. */
+
+:root {
+  /* Accent — hold C ~.105 at H ~38; move L only when adding a step */
+  --clay:       #b7674f;            /* oklch(59.9% .109 37.5) — rules, eyebrows, markers */
+  --clay-deep:  #9a5239;            /* oklch(52.0% .103 39.7) — text only: asides, links */
+  --clay-tint:  #f3e7e0;            /* oklch(93.6% .016 52.6) — declared, no permitted use yet */
+
+  /* Ink — every grey is black at an opacity, never a tinted grey */
+  --ink:        #000;
+  --ink-soft:   rgba(0,0,0,.78);    /* running prose */
+  --mute:       rgba(0,0,0,.45);    /* entry rank three, folio */
+
+  /* Paper and rule */
+  --paper:      #fff;
+  --line:       rgba(0,0,0,.14);    /* dividers, folio hairlines */
+  --line-hard:  #000;               /* opens a definition list, top edge only */
+
+  /* Tracking ladder — four rungs, one role each */
+  --track-mast:    .42em;           /* cover masthead */
+  --track-wide:    .30em;           /* list head, list-register eyebrow */
+  --track-eyebrow: .18em;           /* memo eyebrow */
+  --track-label:   .14em;           /* utility label */
+
+  /* Step scale */
+  --s2:  8px;  --s3: 12px; --s4: 16px; --s5: 24px;
+  --s6: 32px;  --s7: 48px; --s8: 64px;
+
+  /* Sheet */
+  --sheet-w:      816px;
+  --sheet-h:     1056px;
+  --sheet-margin:  72px;
+  --measure-list: 672px;
+  --measure-prose: 600px;
+}
+
+/* Type — Montserrat 400/700, roman and italic. No second family.
+   role              size    weight  tracking  leading  colour
+   cover title       54      400     .015em    1.02     ink        (caps, proposed)
+   page title list   34      400     .015em    1.05     ink        (caps)
+   heading memo      34      700     -.02em    1.12     ink
+   body              14.5    400     .005em    1.62     ink-soft
+   entry line        13.5    mixed   .005em    1.62     three ranks
+   annotation        12.5    400     .005em    1.55     ink-soft
+   eyebrow / folio   11      400/700 ladder    1        clay / mute
+   utility label     10.5    700     .14em     1        ink
+
+   Entry ramp: producer 700 ink, cuvee 400 italic ink, origin 400 mute.
+   Italic is a structural slot in black, a voice in clay-deep. Never both on one page.
+
+   Never: gradients, dot leaders, row dividers, warm greys, clay fills,
+   a second typeface, mixed registers on one sheet, emoji, rounded corners,
+   shadows, sub-pixel hairlines. */

@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+  <style>
+    body { margin: 0; background: #ffffff; font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 400; font-size: 14.5px; line-height: 1.62; letter-spacing: .005em; color: #000000; -webkit-font-smoothing: antialiased; }
+    a { color: #9a5239; text-decoration: none; border-bottom: 1px solid rgba(154,82,57,.35); }
+    a:hover { color: #b7674f; border-bottom-color: #b7674f; }
+    p { margin: 0 0 16px; color: rgba(0,0,0,.78); }
+    p:last-child { margin-bottom: 0; }
+  </style>
+</helmet>
+
+<div style="width: 816px; padding: 72px; display: flex; flex-direction: column; background: #ffffff;">
+
+  <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 24px;">
+    <span style="font-size: 11px; text-transform: uppercase; letter-spacing: .30em; color: #b7674f; line-height: 1;">Components</span>
+    <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: .14em; font-weight: 700; color: rgba(0,0,0,.45); line-height: 1;">08</span>
+  </div>
+  <h1 style="font-size: 34px; font-weight: 400; text-transform: uppercase; letter-spacing: .015em; line-height: 1.05; margin: 12px 0 0;">Editorial blocks</h1>
+
+  <p style="margin-top: 24px; max-width: 600px;">Four blocks carry everything the memo register has to say. All four are built from the same two ingredients &mdash; a bold utility label and a run of ink-soft prose &mdash; and differ only in how they are ranged.</p>
+
+  <div style="display: flex; align-items: center; gap: 24px; margin: 40px 0 20px;">
+    <span style="font-size: 11.5px; text-transform: uppercase; letter-spacing: .30em; white-space: nowrap; line-height: 1;">Definition list</span>
+    <span style="flex: 1 1 auto; height: 1px; background: #b7674f;"></span>
+  </div>
+
+  <p style="font-size: 12.5px; line-height: 1.55; max-width: 600px; margin-bottom: 16px;">The workhorse. A 96px tag column against a flexible definition, one hard black rule at the top edge, 14% dividers between rows, 12 of padding above and below each. The tag takes 3px of padding-top so its cap height lines up with the first line of prose beside it.</p>
+
+  <div style="display: grid; gap: 0;">
+    <div style="display: grid; grid-template-columns: 96px 1fr; gap: 16px; align-items: start; padding: 12px 0; border-top: 1px solid #000000; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78);">
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: #000000; padding-top: 3px;">Confirmed</span>
+      <span>A reading the documents already agree on. Safe to build against.</span>
+    </div>
+    <div style="display: grid; grid-template-columns: 96px 1fr; gap: 16px; align-items: start; padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78);">
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: #000000; padding-top: 3px;">Translated</span>
+      <span>An old treatment restated in current terms. The original is retired, not deprecated &mdash; do not reintroduce it.</span>
+    </div>
+    <div style="display: grid; grid-template-columns: 96px 1fr; gap: 16px; align-items: start; padding: 12px 0; border-bottom: 1px solid rgba(0,0,0,.14); font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78);">
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: #000000; padding-top: 3px;">Open</span>
+      <span>A live question with the options stated. Anything marked open needs a decision before it spreads.</span>
+    </div>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 24px; margin: 48px 0 20px;">
+    <span style="font-size: 11.5px; text-transform: uppercase; letter-spacing: .30em; white-space: nowrap; line-height: 1;">Two column split</span>
+    <span style="flex: 1 1 auto; height: 1px; background: #b7674f;"></span>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px;">
+    <div>
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; line-height: 1;">One. Ranged label</span>
+      <p style="font-size: 12.5px; line-height: 1.55; margin: 10px 0 0;">Equal halves, 48 gutter, no rule between them. A numbered label sits above each run of prose at 10 of clearance, and stacked pairs inside one column take 28 to 32 between them.</p>
+    </div>
+    <div>
+      <span style="font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; line-height: 1;">Two. Ordinal words</span>
+      <p style="font-size: 12.5px; line-height: 1.55; margin: 10px 0 0;">Points are counted in words, not digits, and the count belongs to the label rather than a marker in the gutter. Digits in this system mean prices, folios and measurements.</p>
+    </div>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 24px; margin: 48px 0 20px;">
+    <span style="font-size: 11.5px; text-transform: uppercase; letter-spacing: .30em; white-space: nowrap; line-height: 1;">Value ladder</span>
+    <span style="flex: 1 1 auto; height: 1px; background: #b7674f;"></span>
+  </div>
+
+  <div style="display: flex; align-items: flex-start; gap: 48px;">
+    <div style="flex: 1 1 auto; display: grid; gap: 10px;">
+      <div style="display: flex; align-items: baseline; gap: 16px;"><span style="min-width: 52px; font-size: 10px; letter-spacing: .14em; color: rgba(0,0,0,.45); font-variant-numeric: tabular-nums;">.42em</span><span style="font-size: 11px; text-transform: uppercase; letter-spacing: .42em; font-weight: 700; color: #b7674f; line-height: 1;">Masthead</span></div>
+      <div style="display: flex; align-items: baseline; gap: 16px;"><span style="min-width: 52px; font-size: 10px; letter-spacing: .14em; color: rgba(0,0,0,.45); font-variant-numeric: tabular-nums;">.30em</span><span style="font-size: 11px; text-transform: uppercase; letter-spacing: .30em; line-height: 1;">List head</span></div>
+      <div style="display: flex; align-items: baseline; gap: 16px;"><span style="min-width: 52px; font-size: 10px; letter-spacing: .14em; color: rgba(0,0,0,.45); font-variant-numeric: tabular-nums;">.18em</span><span style="font-size: 11px; text-transform: uppercase; letter-spacing: .18em; font-weight: 700; color: #b7674f; line-height: 1;">Memo eyebrow</span></div>
+      <div style="display: flex; align-items: baseline; gap: 16px;"><span style="min-width: 52px; font-size: 10px; letter-spacing: .14em; color: rgba(0,0,0,.45); font-variant-numeric: tabular-nums;">.14em</span><span style="font-size: 11px; text-transform: uppercase; letter-spacing: .14em; font-weight: 700; line-height: 1;">Utility label</span></div>
+    </div>
+    <div style="flex: 0 0 240px; font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78);">A specimen block that shows a scale by setting it rather than tabulating it. A 52px numeric column at 10px mute, a 16 gap, then the sample at its real values. Use it for tracking, weight or value ramps; never for sizes, which need a table.</div>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 24px; margin: 48px 0 20px;">
+    <span style="font-size: 11.5px; text-transform: uppercase; letter-spacing: .30em; white-space: nowrap; line-height: 1;">The aside</span>
+    <span style="flex: 1 1 auto; height: 1px; background: #b7674f;"></span>
+  </div>
+
+  <div style="display: flex; align-items: flex-start; gap: 48px;">
+    <div style="flex: 1 1 auto; border-top: 1px solid #000000; border-bottom: 1px solid rgba(0,0,0,.14); padding: 20px 0;">
+      <p style="font-size: 12.5px; line-height: 1.55; margin: 0;">Every rule above is a reading of documents that already shipped. <span style="font-style: italic; color: #9a5239;">Where this system guesses, it says so in clay italic and marks the item open.</span></p>
+    </div>
+    <div style="flex: 0 0 240px; font-size: 12.5px; line-height: 1.55; color: rgba(0,0,0,.78);">Clay-deep italic, set inline inside a paragraph &mdash; never pulled out into a box, a band or a quote. One per page, and only where the page changes its own footing.</div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

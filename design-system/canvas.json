@@ -1,0 +1,28 @@
+{
+  "pages": [
+    { "id": "page-1", "name": "Foundations" },
+    { "id": "page-2", "name": "Components" },
+    { "id": "page-3", "name": "Specimen" }
+  ],
+  "artboards": [
+    { "file": "Main.dc.html",         "page": "page-1", "x": 0,    "y": 0,    "w": 816, "h": 1056, "title": "01 Cover", "print": "fixed" },
+    { "file": "Registers.dc.html",    "page": "page-1", "x": 940,  "y": 0,    "w": 816, "h": 1500, "title": "02 Two registers", "print": "flow" },
+    { "file": "Color.dc.html",        "page": "page-1", "x": 1880, "y": 0,    "w": 816, "h": 1800, "title": "03 Color", "print": "flow" },
+    { "file": "Type.dc.html",         "page": "page-1", "x": 0,    "y": 1960, "w": 816, "h": 1650, "title": "04 Type", "print": "flow" },
+    { "file": "Space.dc.html",        "page": "page-1", "x": 940,  "y": 1960, "w": 816, "h": 1450, "title": "05 Space", "print": "flow" },
+
+    { "file": "Entry.dc.html",        "page": "page-2", "x": 0,    "y": 0,    "w": 816, "h": 1500, "title": "06 The entry", "print": "flow" },
+    { "file": "Heads.dc.html",        "page": "page-2", "x": 940,  "y": 0,    "w": 816, "h": 1250, "title": "07 Heads & rules", "print": "flow" },
+    { "file": "Blocks.dc.html",       "page": "page-2", "x": 1880, "y": 0,    "w": 816, "h": 1300, "title": "08 Editorial blocks", "print": "flow" },
+    { "file": "Laws.dc.html",         "page": "page-2", "x": 0,    "y": 1660, "w": 816, "h": 1650, "title": "09 Laws", "print": "flow" },
+
+    { "file": "SpecimenList.dc.html", "page": "page-3", "x": 0,    "y": 0,    "w": 816, "h": 1056, "title": "10 List sheet", "print": "fixed" },
+    { "file": "SpecimenMemo.dc.html", "page": "page-3", "x": 940,  "y": 0,    "w": 816, "h": 1056, "title": "11 Memo sheet", "print": "fixed" }
+  ],
+  "annotations": [
+    { "id": "note-foundations", "page": "page-1", "x": 0, "y": -170, "w": 500, "text": "FOUNDATIONS\nRead in order: the cover states the premise, then the register split, then color, type and space.\n\nEverything here was read back out of the wine list and the memo set. Where the system guesses, the item is marked Open on board 09." },
+    { "id": "note-components", "page": "page-2", "x": 0, "y": -170, "w": 500, "text": "COMPONENTS\nFour things: the entry line that carries 44 pages, the heads that open a sheet, the blocks that carry memo prose, and the laws that govern all of it.\n\nBoard 06 has a variant switch above the artboard — pour, marker, plain." },
+    { "id": "note-specimen", "page": "page-3", "x": 0, "y": -170, "w": 500, "text": "SPECIMEN\nOne sheet per register, both at true Letter size (816 x 1056 at 96ppi), built only from what the foundations and components boards define.\n\nIf a sheet needs something these boards do not name, that is a gap in the system, not a licence." }
+  ],
+  "launch": { "view": "canvas", "page": "page-1" }
+}
